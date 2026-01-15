@@ -18,5 +18,18 @@ SensorData sensor_read(void){
         current_value = 20.0f;
     }
     data.value = current_value;
+    
+    if (data.value <= 60.0f)
+    {
+        data.status = SENSOR_STATUS_OK;
+    }
+    else if (data.value <= 70.0f)
+    {
+        data.status = SENSOR_STATUS_WARNING;
+    }
+    else
+    {
+        data.status = SENSOR_STATUS_ERROR;
+    }
     return data;
 }
