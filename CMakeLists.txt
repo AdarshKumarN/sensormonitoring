@@ -7,4 +7,5 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(SENSOR_MONITORING
     src/main.c
+    src/sensor.c
 )
