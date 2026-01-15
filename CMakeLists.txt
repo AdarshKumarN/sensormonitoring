@@ -14,3 +14,13 @@ target_include_directories(SENSOR_MONITORING
     PRIVATE
         ${CMAKE_SOURCE_DIR}/include
 )
+
+add_executable(SENSOR_TESTING
+    tests/sensor_test.c
+    src/sensor.c
+)
+
+target_include_directories(SENSOR_TESTING
+    PRIVATE
+        ${CMAKE_SOURCE_DIR}/include
+)   

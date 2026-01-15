@@ -10,7 +10,6 @@ void sensor_init(void){
 
 SensorData sensor_read(void){
     SensorData data;
-
     /*Simulation*/
     current_value += 2.5f;
     if(current_value > 80.0f)
@@ -32,4 +31,19 @@ SensorData sensor_read(void){
         data.status = SENSOR_STATUS_ERROR;
     }
     return data;
+}
+SensorStatus sensor_evaluate_status(float value)
+{
+    if (value <= 60.0f)
+    {
+        return SENSOR_STATUS_OK;
+    }
+    else if (value <= 70.0f)
+    {
+        return SENSOR_STATUS_WARNING;
+    }
+    else
+    {
+        return SENSOR_STATUS_ERROR;
+    }
 }

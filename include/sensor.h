@@ -24,5 +24,7 @@ void sensor_init(void);
 /*Read one Sensor Sample*/
 SensorData sensor_read(void);
 
+SensorStatus sensor_evaluate_status(float value);
+
 /*end SENSOR_H*/
 #endif
