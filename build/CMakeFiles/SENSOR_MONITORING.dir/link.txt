@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/SENSOR_MONITORING.dir/src/main.c.o -o SENSOR_MONITORING 

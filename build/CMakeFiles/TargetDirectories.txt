@@ -1,0 +1,3 @@
+/home/adarsh/sensormonitoring/build/CMakeFiles/SENSOR_MONITORING.dir
+/home/adarsh/sensormonitoring/build/CMakeFiles/edit_cache.dir
+/home/adarsh/sensormonitoring/build/CMakeFiles/rebuild_cache.dir
