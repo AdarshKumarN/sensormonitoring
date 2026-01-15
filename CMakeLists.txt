@@ -9,6 +9,7 @@ add_executable(SENSOR_MONITORING
     src/main.c
     src/sensor.c
 )
+
 target_include_directories(SENSOR_MONITORING
     PRIVATE
         ${CMAKE_SOURCE_DIR}/include
